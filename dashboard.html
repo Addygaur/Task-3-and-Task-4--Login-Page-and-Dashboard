@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Include Chart.js library from CDN (version 3.x) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3"></script>
+</head>
+<body>
+    <h2 align="center">Company Metrics</h2>
+  <div class="dashboard-container">
+    
+       <div class="metric-box">
+        <span class="metric-box-number green-text">$406,411.29</span>
+        <span class="metric-box-text">Total Revenue</span>
+      </div>
+    
+      <div class="metric-box">
+        <span class="metric-box-number">$620</span>
+        <span class="metric-box-text">Total Jobs Avg</span>
+      </div>
+    
+      <div class="metric-box">
+        <span class="metric-box-number">655</span>
+        <span class="metric-box-text">Tickets Created</span>
+      </div>
+    
+      <div class="metric-box">
+        <span class="metric-box-number">735</span>
+        <span class="metric-box-text">Tickets Scheduled</span>
+      </div>
+    
+      <div class="metric-box">
+        <span class="metric-box-number red-text">$110,448.8</span>
+        <span class="metric-box-text">Outstanding Amount</span>
+      </div>
+    
+      <div class="metric-box">
+        <span class="metric-box-number">105</span>
+        <span class="metric-box-text">Memberships Sold</span>
+      </div>
+    
+      <div class="metric-box">
+        <span class="metric-box-number">436</span>
+        <span class="metric-box-text">Jobs Completed</span>
+      </div>
+    
+      <div class="metric-box">
+        <span class="metric-box-number">65</span>
+        <span class="metric-box-text">Total Canceled</span>
+      </div>
+
+    <div class="chart-container">
+        <!-- <h2 class="chart-title">Revenue By Job Location</h2> -->
+        <canvas id="jobLocationChart" class="graph"></canvas>
+      </div>
+      <div class="chart-container">
+        <!-- <h2 class="chart-title">Revenue By Job Type</h2> -->
+        <canvas id="jobTypeChart" class="graph"></canvas>
+      </div>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
